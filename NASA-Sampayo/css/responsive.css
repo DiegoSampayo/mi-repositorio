@@ -1,0 +1,57 @@
+.media {
+    background-color: aquamarine;
+    height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+    .media {
+        background-color: blueviolet;
+    }
+}
+
+    .media p{
+        display: none;
+    }
+    
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .media {
+        background-color: blue;
+        color: black;
+    }
+
+    .media nav li a {
+        display: grid;
+        background-color: white;
+        padding:5px;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1px 1px;
+        font-size: 10px;   
+}
+}
+
+@media (min-width: 320px) and (max-width: 479px){
+    .media {
+        background-color: black;
+        color: blanchedalmond;
+    }
+
+    .media ul{
+        display: none;
+    }
+    .media nav li a {
+        display: grid;
+        background-color: white;
+        padding:1px;
+        gap: 1px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1px 1px;
+        font-size: 10px;   
+}
+    .media div {
+        display: flexbox;
+        flex-flow: column;
+ }
+
+}
