@@ -4,73 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="./css/style-nasa.css">
-    <link rel="stylesheet" href="/css/responsive.css">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body class="media">
-    <h1>About</h1>
-
-    <header id="header">
-        <div class="logo">
-            <li><a href="index.html">NASA</a></li>
-        </div>
-        <nav class="menu">
-            <ul>                
-                <li><a href="mission.html">Missions</a></li>
-                <li><a href="Gallerie.html">Galerrie</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="followus.html">Follow us</a></li>
-                <li><a href="login.html">Log in</a></li>
-                <li>    <div>
-                    <form action="enviar.php" method="get" enctype="text/plain">
-                        <div>
-                            <label for="search"></label>
-                            <input type="text" id="search" placeholder="Search">
-            
-            
-                        </div>
-            
-            
-                    </form>
-                </div></li>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img src="/NASA-Sampayo/Imagenes/Nasa-Logo.png" alt=""width="50" height="24"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="mission.html">Missions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallerie.html">Gallerie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="followus.html">Follow Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="about.html">Astronauts</a></li>
+                  <li><a class="dropdown-item" href="about.html">Carrers@NASA</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="about.html">Locations</a></li>
+                </ul>
+              </li>
 
             </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
 
-        </nav>
-     </header>
+<hr>
+      <div class="container-sm">
+        <div class="row row-cols-1 gap-1">
+          <div class="col border border-3 p-2">Astronauts
+            <div class="clearfix" >
+                <img src="./Imagenes/astronaut-suit-in-cape-canaveral-florida-usa-royalty-free-image-1581539325.jpg" class="img-fluid col-md-6 col-sm-6  float-md-end mb-3 ms-md-3" alt="...">
+              
 
+              </div>
+          </div>
+          <div class="col border border-3 p-2">Carrers@NASA
+            <div class="clearfix">
+                <img src="./Imagenes/carrera.jpg" class="img-fluid col-md-6 col-sm-6 float-md-end mb-3 ms-md-3" alt="...">
+              
+                <p>
+                  A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+                </p>
 
+              </div>
+          </div>
+          <div class="col border border-3 p-2">Locations
+            <div class="clearfix">
+                <img src="./Imagenes/about.jpg" class="img-fluid col-md-6 col-sm-6 float-md-end mb-3 ms-md-3" alt="...">
+              
+                <p>
+                  A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+                </p>
 
+              </div>
+          </div>
 
-        </form>
-    <div class="flex-container">
-        <div class="box">
-            <h5>About Nasa</h5>
-            <p>The National Aeronautics and Space Administration is America’s civil space program and the global leader in space exploration. The agency has a diverse workforce of just under 18,000 civil servants, and works with many more U.S. contractors, academia, and international and commercial partners to explore, discover, and expand knowledge for the benefit of humanity. With an annual budget of $23.2 billion in Fiscal Year 2021, which is less than 0.5% of the overall U.S. federal budget, NASA supports more than 312,000 jobs across the United States, generating more than $64.3 billion in total economic output (Fiscal Year 2019). </p>
 
         </div>
-        
-        <div class="box">
-            <h5>Leadership</h5>
-            <p>NASA is led by Administrator Bill Nelson, who became the agency's 14th administrator on May 3, 2021. Nelson served in the U.S. Senate for 18 years from Florida and as a payload specialist on space shuttle mission 61-C in 1986.</p>
-        </div>
-
-        <div class="box">
-            <h5>Careers at NASA: Explore the Extraordinary, Every Day</h5>
-            <p>NASA is more than astronauts. We are scientists, engineers, IT specialists, human resources specialists, accountants, writers, technicians and many other kinds of people working together to break barriers to achieve the seemingly impossible.
-
-                We continue NASA’s legacy of excellence through an unprecedented array of missions—from laying the foundation to expand our human presence in deep space to developing cutting-edge technologies to studying Earth’s system. We tackle each adventure with curiosity and innovation to leave an enduring impact on the world and humanity.
-                
-                Explore the Extraordinary: Align your talents with your passion and find out why NASA consistently is named a best place to work in the federal government. At NASA, you’ll have an opportunity to work on unique and challenging projects that truly make an impact on humanity. Learn more about the extraordinary things our team accomplishes on an everyday basis. Are you ready to explore the extraordinary?  Click Here to Search Jobs 
-                
-                **We’re honored to be named the Best Place to Work in the Federal Government for the 9th year in a row! More: https://go.nasa.gov/3wZXfmF 
-                
-                ***NASA was recently named the Diversity Champion winner of LinkedIn's 2021 Talent Awards! Learn more about our commitment to diversity: nasa.gov/careers/diversity 
-                
-                NASA Recruitment Brochure </p>
-
-
-
-     </div>
+      </div>
