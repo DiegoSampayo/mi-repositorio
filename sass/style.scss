@@ -1,0 +1,100 @@
+body {
+    background-image: url('../Imagenes/astro\ luna.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+   
+   div.gallery{
+        margin: 5px;
+        float: left;
+        width: 250px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+        :hover{
+            border: 1px solid #777;
+            width:300px ;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* maps */
+
+    $red-social :(
+        facebook:blue,
+        twitter: skyblue,
+        instagram:rgb(243, 108, 131),
+        tiktok:red,
+
+    );
+
+
+    @each $nombre, $valor in $red-social {
+
+        .icon-#{$nombre} {
+            background-color: $valor;
+        }
+        
+    }
+
+    .boton {
+        display: inline;
+        width: 50px;
+        text-decoration:none;
+        padding: 5px;
+        border: 3px solid skyblue;
+        border-radius: 30px;
+
+    }
+
+    .boton--verde {
+        @extend .boton;
+        background-color: lightgreen;
+        border: 3px solid green;
+        
+    }
+
+    .boton--azul {
+        @extend .boton;
+        background-color: lightblue;
+        border: 3px solid red;
+        color: red;
+        
+    }
+
+
+    /* mixin */
+
+    @mixin boton {
+        display: inline-block;
+        padding: 5px;
+        border: 3px solid skyblue;
+        
+    }
+
+    .boton--gris {
+        @include boton;
+        background-color: #777;
+    }
+
+    @mixin boton ($col, $bg) {
+        display: inline-block;
+        padding: 10px;
+        color: $col;
+        background: $bg;
+        
+    }
+

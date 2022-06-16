@@ -1,0 +1,74 @@
+body {
+  background-image: url("../Imagenes/astro luna.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 250px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.gallery :hover {
+  border: 1px solid #777;
+  width: 300px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* maps */
+.icon-facebook {
+  background-color: blue;
+}
+
+.icon-twitter {
+  background-color: skyblue;
+}
+
+.icon-instagram {
+  background-color: #f36c83;
+}
+
+.icon-tiktok {
+  background-color: red;
+}
+
+.boton, .boton--verde, .boton--azul {
+  display: inline;
+  width: 50px;
+  text-decoration: none;
+  padding: 5px;
+  border: 3px solid skyblue;
+  border-radius: 30px;
+}
+
+.boton--verde {
+  background-color: lightgreen;
+  border: 3px solid green;
+}
+
+.boton--azul {
+  background-color: lightblue;
+  border: 3px solid red;
+  color: red;
+}
+
+/* mixin */
+.boton--gris {
+  display: inline-block;
+  padding: 5px;
+  border: 3px solid skyblue;
+  background-color: #777;
+}
+/*# sourceMappingURL=style.css.map */
