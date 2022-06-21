@@ -29,7 +29,7 @@ div.desc {
 
 /* maps */
 .icon-facebook {
-  background-color: blue;
+  background-color: #4c4cff;
 }
 
 .icon-twitter {
@@ -41,7 +41,7 @@ div.desc {
 }
 
 .icon-tiktok {
-  background-color: red;
+  background-color: rgba(252, 73, 73, 0.85);
 }
 
 .boton, .boton--verde, .boton--azul {
