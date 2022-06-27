@@ -1,8 +1,14 @@
 body {
-  background-image: url("../Imagenes/astro luna.jpg");
+  
+  background-image: url(https://www.wallpapertip.com/wmimgs/22-225256_476268-title-sci-fi-stars-wallpaper-high-resolution.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+body.mask-custom {
+  backdrop-filter: blur(3px);
+  background-color: rgba(45, 45, 47, 0.65);
 }
 
 div.gallery {
@@ -71,4 +77,6 @@ div.desc {
   border: 3px solid skyblue;
   background-color: #777;
 }
+
+
 /*# sourceMappingURL=style.css.map */
