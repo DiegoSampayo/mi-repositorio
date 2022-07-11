@@ -7,7 +7,7 @@ body {
 }
 
 body.mask-custom {
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
   background-color: rgba(45, 45, 47, 0.65);
 }
 
@@ -79,4 +79,22 @@ div.desc {
 }
 
 
-/*# sourceMappingURL=style.css.map */
+
+
+.bgcolor1 {
+  background-color: rgb(21, 36, 96);
+  
+}
+
+.fontcolor1 {
+  color: white;
+  font-size: larger;
+}
+
+.font-title {
+  font-size:larger;
+  font-weight: 300;
+  font-style: unset;
+}
+
+
